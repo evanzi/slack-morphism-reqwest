@@ -1,0 +1,51 @@
+[package]
+name = "slack-morphism-reqwest"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["Evan Zimmerman"]
+description = "A reqwest-based HTTP connector for slack-morphism"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/evanzi/slack-morphism-reqwest"
+homepage = "https://github.com/evanzi/slack-morphism-reqwest"
+documentation = "https://docs.rs/slack-morphism-reqwest"
+readme = "README.md"
+keywords = ["slack", "slack-morphism", "reqwest", "connector", "api-bindings"]
+categories = ["api-bindings", "web-programming::http-client"]
+include = [
+    "Cargo.toml",
+    "src/**/*.rs",
+    "examples/**/*.rs",
+    "README.md",
+    "LICENSE-MIT",
+    "LICENSE-APACHE",
+    "CHANGELOG.md",
+]
+
+[dependencies]
+slack-morphism = { version = "2.20", default-features = false }
+reqwest = { version = "0.12", default-features = false, features = [
+    "rustls-tls",
+    "json",
+    "multipart",
+    "gzip",
+    "http2",
+] }
+rvstruct = "0.3"
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+url = "2.5"
+http = "1.1"
+mime = "0.3"
+tracing = "0.1"
+bytes = "1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+wiremock = "0.6"
+slack-morphism = { version = "2.20", default-features = false }
+
+[[example]]
+name = "post_message"
+path = "examples/post_message.rs"
