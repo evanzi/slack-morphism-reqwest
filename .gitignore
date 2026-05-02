@@ -4,3 +4,6 @@ Cargo.lock
 .idea/
 .vscode/
 *.swp
+
+# Local handoff / working notes — not for the public repo.
+BUILD-NOTES.md
