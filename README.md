@@ -107,7 +107,7 @@ If you need tier-aware proactive throttling (the official hyper connector's `wit
 
 | `slack-morphism-reqwest` | `slack-morphism` | `reqwest`   | MSRV   |
 |--------------------------|------------------|-------------|--------|
-| `0.1.x`                  | `2.20.x`         | `0.12.x`    | 1.85   |
+| `0.1.x`                  | `2.20.x`         | `0.12.x`    | 1.88   |
 
 ## Status
 
