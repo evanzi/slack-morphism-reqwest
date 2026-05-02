@@ -2,7 +2,7 @@
 name = "slack-morphism-reqwest"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.75"
+rust-version = "1.85"
 authors = ["Evan Zimmerman"]
 description = "A reqwest-based HTTP connector for slack-morphism"
 license = "MIT OR Apache-2.0"

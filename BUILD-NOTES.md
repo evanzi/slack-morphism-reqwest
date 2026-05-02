@@ -133,7 +133,7 @@ slack-morphism-reqwest/
 
 | `slack-morphism-reqwest` | `slack-morphism` | `reqwest`   | MSRV   |
 |--------------------------|------------------|-------------|--------|
-| `0.1.0`                  | `2.20.x` (incl. forward `^2`) | `0.12.x` | 1.75 |
+| `0.1.0`                  | `2.20.x` (incl. forward `^2`) | `0.12.x` | 1.85 |
 
 ## Funes integration plan
 
